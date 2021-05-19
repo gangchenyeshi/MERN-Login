@@ -7,7 +7,10 @@ const app = express();
 dotenv.config({ path: "./config.env" });
 
 //Mongoose Connection
-require("./db/connect")
+require("./db/connect");
+
+//import userModel
+const userModel = require('./model/userSchema');
 //SERVER Connection
 const PORT = process.env.PORT
 
